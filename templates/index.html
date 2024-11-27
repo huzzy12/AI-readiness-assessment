@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-brand-navy mb-4">The AI Automation Readiness Score™</h1>
+        <p class="text-xl text-gray-600">Discover how prepared your organization is for AI transformation and get personalized recommendations.</p>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+        <h2 class="text-2xl font-semibold text-brand-navy mb-4">Why Take This Assessment?</h2>
+        <ul class="space-y-4">
+            <li class="flex items-start">
+                <svg class="h-6 w-6 text-brand-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Understand your current AI maturity level</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="h-6 w-6 text-brand-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Get personalized recommendations for improvement</span>
+            </li>
+            <li class="flex items-start">
+                <svg class="h-6 w-6 text-brand-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Identify key areas for AI implementation</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="text-center">
+        <a href="{{ url_for('quiz') }}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-orange hover:bg-brand-orange-dark">
+            Start Assessment
+            <svg class="ml-2 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+{% endblock %}
